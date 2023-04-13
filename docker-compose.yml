@@ -1,0 +1,19 @@
+version: "3"
+services:
+
+    redis:
+        image: 'redis:alpine'
+        ports:
+            - '6379:6379'
+    db:
+        image: postgres
+        environment:
+            POSTGRES_PASSWORD: password123
+            POSTGRES_USER: user123
+            POSTGRES_DB: db123
+        volumes:
+            - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    app:
+        build: .
+        ports:
+            - 3000:3000
