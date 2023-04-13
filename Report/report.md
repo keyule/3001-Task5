@@ -4,7 +4,7 @@
 - Github: https://github.com/keyule/3001-Task5
 
 *View the markdown version for better formatting at:*   
-** 
+*https://github.com/keyule/3001-Task5/blob/main/Report/report.md* 
 
 ## Task 5 - Caching
 
@@ -52,11 +52,11 @@ app.get('/', async (req, res) => {
 
 3. First GET request: 125ms
 
-    >![First Get](https://github.com/keyule/3001-Task4/blob/master/Report/Screenshots/leader.png?raw=true)
+    >![First Get](https://github.com/keyule/3001-Task5/blob/main/Report/Screenshots/firstGET.png?raw=true)
 
 4. Subsequent Get request: 41ms
 
-    >![Second Get](https://github.com/keyule/3001-Task4/blob/master/Report/Screenshots/leader.png?raw=true)
+    >![Second Get](https://github.com/keyule/3001-Task5/blob/main/Report/Screenshots/secondGET.png?raw=true)
 
 5. Flush the redis cache to see if it increases back up 
 
@@ -68,7 +68,7 @@ app.get('/', async (req, res) => {
 
 6. Another Get Request: 117ms
 
-    >![Last Get](https://github.com/keyule/3001-Task4/blob/master/Report/Screenshots/leader.png?raw=true)
+    >![Last Get](https://github.com/keyule/3001-Task5/blob/main/Report/Screenshots/lastGET.png?raw=true)
 
 
 ### Appendix
